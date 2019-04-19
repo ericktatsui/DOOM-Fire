@@ -98,12 +98,8 @@ const calculateFireStrengh = () => {
 configCanvas();
 
 const animationFrame = () => {
-  // context.clearRect(0, 0, canvas.width, canvas.height);
-
   calculateFireStrengh();
-  context.fill();
-  
-    requestAnimationFrame(animationFrame);
+  requestAnimationFrame(animationFrame);
 };
 
 animationFrame();
